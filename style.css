@@ -1,3 +1,5 @@
+/* plantilla 10 ----
+
 header {
 	width: 100%;
 	height: 100vh;
@@ -6,27 +8,22 @@ header {
 	background-position: center;
 	background-size: cover;
 }
-
 .top {
 	background-color: rgba(0, 0, 0, 0.3);
 	width: 100%;
 	height: 100vh;
 }
-
 .bg-light {
 	background-color:transparent!important;
 }
-
 .navbar {
 	padding: 1.5rem 0 0 2rem;
 }
-
 .navbar-light .navbar-brand {
 	color: #fff;
 	font-weight: bold;
 	font-size: 36px;
 }
-
 .navbar-light .navbar-nav .nav-link {
 	color: #fff;
 	text-transform: uppercase;
@@ -35,22 +32,18 @@ header {
 	font-size: 14px;
 	border-bottom: 2px solid transparent;
 }
-
 .navbar-light .navbar-nav .nav-link.active {
 	color: #fff;
 	border-bottom: 2px solid #fff;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
 	border-bottom: 2px solid #fff;
 	color: #fff;
 }
-
 .navbar-nav {
 	border-bottom: 1px solid #fff;
 	padding-right: 2rem;
 }
-
 header .d-flex {
 	color: #fff;
 	width: 100%;
@@ -59,19 +52,15 @@ header .d-flex {
 	text-align: center;
 	margin-top: -3rem;
 }
-
 header .d-flex h1 {
 	font-size: 48px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
 header span {
 	color: #DD0847;
 	margin: 0 10px;
 }
-
-
 #num-icons .p-2 {
 	background: #eee;
 	padding: 2rem 4rem!important;
@@ -80,15 +69,12 @@ header span {
 	font-size: 21px;
 	text-align: center;
 }
-
 .p-2 span {
 	font-size: 14px;
 }
-
 .love-text {
 	padding: 0 8rem 0 4rem;
 }
-
 .love-img {
 	background-image: url(./img2.jpg);
 	background-repeat: no-repeat;
@@ -97,24 +83,107 @@ header span {
 	width: 80rem;
 	height: 20rem;
 }
-
 .love-text h4 {
 	color: blue;
 }
-
 .love-text h2 {
 	text-transform: uppercase;
 }
-
 .love-text p {
 	color: #777;
 }
+--- */
 
 
+/* ejercicio transform rotate */
 
+#c1 {
+	width: 200px;
+	height: 100px;
+	background-color: yellow;
+	/* rotate div */
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	transform: rotate(7deg);
+}
 
+aside {
+	width: 50px;
+	height: 50px;
+	background-color: teal;
+}
 
+.transformado {
+	/* lo mismo que transformar: scaleX(2) scaleY(2);*/
+	transform: scale(2);
+	background-color: blue;
+}
 
+#cdr2 {
+	width: 500px;
+	height: 300px;
+	-ms-transform: skew(20deg, 10deg);
+	-webkit-transform: skew(20deg, 10deg);
+	transform: skew(20deg, 10deg);
+	background-color: skyblue;
+}
+
+#d1 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+#d2 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	-ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+	-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+	transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+#d3 {
+	width: 300px;
+	height: 100px;
+	background-color: yellow;
+	border: 1px solid black;
+	-ms-transform: matrix(1, 0, 0.5, 1, 150, 0);
+	-webkit-transform: matrix(1, 0, 0.5, 1, 150, 0);
+	transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+#d4 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-webkit-transition: width 2s;
+	transition: width 2s;
+}
+
+#d4:hover {
+	width: 300px;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	background: pink;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-transform: background-color 2s ease-out;
+	-moz-transition: background-color 2s ease-out;
+	-o-transition: background-color 2s ease-out;
+	transition: background-color 2s ease-out;
+}
+
+.box:hover {
+	background-color: green;
+	cursor: pointer;
+}
 
 
 /* ejercicio columna 
